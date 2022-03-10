@@ -70,8 +70,8 @@ async def startHandler(bot:Update, msg:Message):
                     )
                 ],
                 [
-                    Button.url('📣 Updates', 'https://t.me/TamilBots'),
-                    Button.url('👨‍💻 Support', 'https://t.me/TamilSupport')
+                    InlineKeyboardButton('📣 Updates', url ='https://t.me/TamilBots'),
+                    InlineKeyboardButton('👨‍💻 Support', url ='https://t.me/TamilSupport')
                 ]
             ]
         )
