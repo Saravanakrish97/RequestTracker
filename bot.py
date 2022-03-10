@@ -2,6 +2,7 @@
 
 
 """Importing"""
+import pyrogram
 # Importing External Packages
 from pyrogram import (
     Client,
