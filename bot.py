@@ -68,7 +68,7 @@ async def startHandler(bot:Update, msg:Message):
                         "➕Add me to your Group.",
                         url = f"https://telegram.me/{botInfo.username}?startgroup=true"
                     )
-                ]
+                ],
                 [
                     Button.url('📣 Updates', 'https://t.me/TamilBots'),
                     Button.url('👨‍💻 Support', 'https://t.me/TamilSupport')
