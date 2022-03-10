@@ -33,6 +33,13 @@ except ModuleNotFoundError:
 # Importing built-in module
 from re import match, search
 
+def removeprefix(self: str, prefix: str, /) -> str:
+    if self.startswith(prefix):
+        return self[len(prefix):]
+    else:
+        return self[:]
+
+
 
 """Connecting to Bot"""
 app = Client(
