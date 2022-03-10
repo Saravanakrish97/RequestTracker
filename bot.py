@@ -373,7 +373,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                         findRegexStr = search(requestRegex, originalMsg)
                         requestString = findRegexStr.group()
                         contentRequested = originalMsg.split(requestString)[1]
-                        requestedBy = originalMsg.replace("Your Request Status").split('\n\n')[0]
+                        requestedBy = f"Your Request Status.\n\n"
                         mentionUser = f"<a href='tg://user?id={userid}'>{requestedBy}</a>"
                         originalMsgMod = originalMsg.replace(requestedBy, mentionUser)
                         originalMsgMod = f"<s>{originalMsgMod}</s>"
