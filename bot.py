@@ -259,7 +259,7 @@ async def requestHandler(bot:Update, msg:Message):
             channelID = document[groupID][0]
             fromUser = msg.from_user
             mentionUser = f"<a href='tg://user?id={fromUser.id}'>{fromUser.first_name}</a>"
-            requestText = f"<b>Request by {mentionUser}\n\n{msg.text}</b>"
+            requestText = f"<b>🥱 Request by {mentionUser}\n\n{msg.text}</b>"
             originalMSG = msg.text
             findRegexStr = match(requestRegex, originalMSG)
             requestString = findRegexStr.group()
